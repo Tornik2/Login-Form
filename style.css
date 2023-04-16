@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: rgb(145 60 224  / 60%);
+}
+
+h1, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(170, 224, 224);
+}
+
+.container {
+    background-color: rgb(145, 60, 224);
+    display: grid;
+    padding: 1.6em;
+    width: 350px;
+    border-radius: 6px;
+}
+
+input {
+    display: block;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.3em;
+    font-weight: 600;
+}
+
+input {
+    outline: none;
+    position: relative;
+    background-color: inherit;
+    border: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding: 0.2em 0;
+    margin-bottom: 2.3em;
+    font-size: 1.2rem;
+    color: white;
+}
+
+label {
+    position: absolute;
+    transform: translateY(0.1em);
+    transition: all 0.3s;
+}
+
+#submit-btn {
+    font-size: 1rem;
+    color: rgb(100, 44, 153);
+    font-weight: 600;
+    border: none;
+    background-color: rgb(245, 238, 252);
+    padding: 1em;
+    border-radius: 7px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-bottom: 2.3em
+}
+
+#submit-btn:hover {
+    background-color: rgb(192, 179, 204);
+    color: rgb(53, 50, 50);
+    
+}
+
+.email-clicked label {
+    transform: translateY(-1.3em);
+    color: rgb(195, 193, 197);
+}
+
+.email-clicked input {
+    border-bottom: 3px solid rgb(195, 193, 197);
+}
+
+.password-clicked label {
+    transform: translateY(-1.3em);
+    color: rgb(195, 193, 197);
+}
+
+.password-clicked input {
+    border-bottom: 3px solid rgb(195, 193, 197);
+}
